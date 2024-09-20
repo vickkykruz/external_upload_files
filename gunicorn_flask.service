@@ -1,0 +1,16 @@
+[Unit]
+Description=Gunicorn instance to serve Flask Project
+After=network.target
+
+[Service]
+User=root
+Group=root
+WorkingDirectory=/home/Joam_Collection
+Environment="PATH=/home/Joam_Collection/venv/bin"
+ExecStart=/home/Joam_Collection/venv/bin/gunicorn --workers 3 --bind unix:/home/Joam_Collection/flask.sock wsgi:app
+Restart=always
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
