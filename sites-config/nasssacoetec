@@ -1,0 +1,55 @@
+server {
+    server_name nasssacoetec.com.ng;
+
+    # Serve the Astro frontend
+    location / {
+        root /var/www/SACOETEC_School_of_sciencs/dist/pages/;
+        try_files $uri $uri/ /index.html;
+    }
+
+    # Serve static files like CSS, JS, and images from the dist folder
+    location /assets/ {
+        root /var/www/SACOETEC_School_of_sciencs/dist/;
+    }
+
+    location /css/ {
+        root /var/www/SACOETEC_School_of_sciencs/dist/;
+    }
+
+    location /js/ {
+        root /var/www/SACOETEC_School_of_sciencs/dist/;
+    }
+
+    location /fonts/ {
+        root /var/www/SACOETEC_School_of_sciencs/dist/;
+    }
+
+    location ~* \.(eot|ttf|woff|woff2|svg)$ {
+        add_header Access-Control-Allow-Origin *;
+        types {
+             application/vnd.ms-fontobject  eot;
+             font/ttf                       ttf;
+             font/woff                      woff;
+             font/woff2                     woff2;
+             image/svg+xml                  svg;
+        }
+    }
+
+    # Firebase initilzation
+    location /firebase/ {
+        alias /var/www/SACOETEC_School_of_sciencs/src/firebase/;
+    }
+
+    # Proxy requests to the Express.js backend
+    location /api/ {
+      rewrite ^/api/(.*)$ /$1 break;  # Removes /api from the request before forwarding
+      proxy_pass http://localhost:4000;
+      proxy_set_header Host $host;
+      proxy_set_header X-Real-IP $remote_addr;
+      proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+      proxy_set_header X-Forwarded-Proto $scheme;
+      proxy_set_header Cookie $http_cookie;
+      proxy_set_header X-CSRF-Token $http_x_csrf_token;
+    }
+
+}

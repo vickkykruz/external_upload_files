@@ -1,0 +1,30 @@
+server {
+    server_name joamcollections.com.ng;
+
+    location / {
+        proxy_pass http://unix:/home/Joam_Collection/flask.sock;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+
+    location /static/ {
+        alias /home/Joam_Collection/website/static/;
+    }
+
+    location /media/ {
+        alias /home/Joam_Collection/website/media/;
+    }
+
+    error_page 404 /404.html;
+    location = /404.html {
+        root /home/Joam_Collection/website/clients/templates;
+    }
+
+    error_page 500 502 503 504 /500.html;
+    location = /500.html {
+        root /home/Joam_Collection/website/clients/templates;
+    }
+
+}
