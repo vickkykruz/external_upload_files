@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en"> <!--begin::Head-->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>NIGERIAN ASSOCIATION OF SCIENCE STUDENTS (NASS) FORMERLY SCIENCE EDUCATION STUDENTS ASSOCIATION (SESA) | STUDENTS DASHBOARD</title><!--begin::Primary Meta Tags-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="NIGERIAN ASSOCIATION OF SCIENCE STUDENTS (NASS) FORMERLY SCIENCE EDUCATION STUDENTS ASSOCIATION (SESA) | STUDENTS DASHBOARD">
+    <meta name="author" content="SCIENCE EDDUCATION STUDENTS ASSOCIATION (SESA) SACOETEC CHAPTER">
+    <meta name="description" content="TOWARDS ADVANCED COMPUTING">
+    <meta name="keywords" content="SCIENCE EDDUCATION STUDENTS ASSOCIATION, SESA, SACOETEC, SACOETEC CHAPTER, TOWARDS ADVANCED COMPUTING"><!--end::Primary Meta Tags--><!--begin::Fonts-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/source-sans-3@5.0.12/index.css" integrity="sha256-tXJfXfp6Ewt1ilPzLDtQnJV4hclT9XuaZUKyUvmyr+Q=" crossorigin="anonymous"><!--end::Fonts--><!--begin::Third Party Plugin(OverlayScrollbars)-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/overlayscrollbars@2.1.0/styles/overlayscrollbars.min.css" integrity="sha256-LWLZPJ7X1jJLI5OG5695qDemW1qQ7lNdbTfQ64ylbUY=" crossorigin="anonymous"><!--end::Third Party Plugin(OverlayScrollbars)--><!--begin::Third Party Plugin(Bootstrap Icons)-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.min.css" integrity="sha256-BicZsQAhkGHIoR//IB2amPN5SrRb3fHB8tFsnqRAwnk=" crossorigin="anonymous"><!--end::Third Party Plugin(Bootstrap Icons)--><!--begin::Required Plugin(AdminLTE)-->
+    <link rel="shortcut icon" href="../../assets/img/fav.png">
+    <link rel="stylesheet" href="../../css/adminlte.css"><!--end::Required Plugin(AdminLTE)--><!-- apexcharts -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/apexcharts@3.37.1/dist/apexcharts.css" integrity="sha256-4MX+61mt9NVvvuPjUWdUdyfZfxSB1/Rf9WtqRHgG5S0=" crossorigin="anonymous"><!-- jsvectormap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jsvectormap@1.5.3/dist/css/jsvectormap.min.css" integrity="sha256-+uGLJmmTKOqBr+2E6KDYs/NRsHxSkONXFHUL0fy2O/4=" crossorigin="anonymous">
+    <style>
+        a[data-astro-cid-3wvivkes] {
+            color: #1f6c34
+        }
+    </style>
+</head> <!--end::Head--> <!--begin::Body-->
+
+<body class="layout-fixed sidebar-expand-lg bg-body-tertiary"> <!--begin::App Wrapper-->
+    <div class="app-wrapper"> <!--begin::Header-->
+        <nav class="app-header navbar navbar-expand bg-body"> <!--begin::Container-->
+            <div class="container-fluid"> <!--begin::Start Navbar Links-->
+                <ul class="navbar-nav">
+                    <li class="nav-item"> <a class="nav-link" data-lte-toggle="sidebar" href="#" role="button"> <i class="bi bi-list"></i> </a> </li>
+                </ul> <!--end::Start Navbar Links--> <!--begin::End Navbar Links-->
+                <ul class="navbar-nav ms-auto"> <!--begin::Notifications Dropdown Menu-->
+                    <li class="nav-item dropdown"> <a class="nav-link" data-bs-toggle="dropdown" href="#"> <i class="bi bi-bell-fill"></i> <span class="navbar-badge badge text-bg-warning">0</span> </a>
+                        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end"> <span class="dropdown-item dropdown-header">0 Notifications</span>
+                            <div class="dropdown-divider"></div> <!-- <a href="#" class="dropdown-item">
+            <i class="bi bi-envelope me-2"></i> 4 new messages
+            <span class="float-end text-secondary fs-7">3 mins</span>
+          </a> -->
+                            <div class="dropdown-divider"></div> <a href="#" class="dropdown-item dropdown-footer">
+                                See All Notifications
+                            </a>
+                        </div>
+                    </li> <!--end::Notifications Dropdown Menu--> <!--begin::Fullscreen Toggle-->
+                    <li class="nav-item"> <a class="nav-link" href="#" data-lte-toggle="fullscreen"> <i data-lte-icon="maximize" class="bi bi-arrows-fullscreen"></i> <i data-lte-icon="minimize" class="bi bi-fullscreen-exit" style="display: none;"></i> </a> </li> <!--end::Fullscreen Toggle--> <!--begin::User Menu Dropdown-->
+                    <li class="nav-item dropdown user-menu"> <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"> <img class="user-image rounded-circle shadow profileImage" alt="User Image"> <span class="d-none d-md-inline sideName"></span> </a>
+                        <ul class="dropdown-menu dropdown-menu-lg dropdown-menu-end"> <!--begin::User Image-->
+                            <li class="user-header text-bg-secondary"> <img class="rounded-circle shadow profileImage" alt="User Image">
+                                <p class="sideName"> <small>Member since Nov. 2023</small> </p>
+                            </li> <!--end::User Image--> <!--begin::Menu Footer-->
+                            <li class="user-footer"> <a href="#" class="btn btn-default btn-flat">Profile</a> <a href="#" class="btn btn-default btn-flat float-end" id="logoutButton">Logout</a> </li> <!--end::Menu Footer-->
+                        </ul>
+                    </li> <!--end::User Menu Dropdown-->
+                </ul> <!--end::End Navbar Links-->
+            </div> <!--end::Container-->
+        </nav> <!--end::Header--> <!--begin::Sidebar-->
+        <aside class="app-sidebar bg-body-secondary shadow" data-bs-theme="dark"> <!--begin::Sidebar Brand-->
+            <div class="sidebar-brand"> <!--begin::Brand Link--> <a href="../index.html" class="brand-link"> <!--begin::Brand Image--> <img src="../../assets/img/fav.png" alt="NASS Logo" class="brand-image opacity-75 shadow"> <!--end::Brand Image--> <!--begin::Brand Text--> <span class="brand-text fw-light">NASS</span> <!--end::Brand Text--> </a> <!--end::Brand Link--> </div> <!--end::Sidebar Brand--> <!--begin::Sidebar Wrapper-->
+            <div class="sidebar-wrapper">
+                <nav class="mt-2"> <!--begin::Sidebar Menu-->
+                    <ul class="nav sidebar-menu flex-column" data-lte-toggle="treeview" role="menu" data-accordion="false">
+                        <li class="nav-item menu-open"> <a href="../clients/index.html" class="nav-link active"> <i class="nav-icon bi bi-speedometer"></i>
+                                <p>
+                                    Dashboard
+                                </p>
+                            </a> </li>
+                        <li class="nav-header">COMPONENTS</li>
+                        <li class="nav-item"> <a href="#" class="nav-link"> <i class="nav-icon bi bi-stopwatch-fill"></i>
+                                <p>
+                                    Quiz
+                                    <i class="nav-arrow bi bi-chevron-right"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item"> <a href="javascript:void(0)" class="nav-link"> <i class="nav-icon bi bi-circle"></i>
+                                        <p>Take Quiz</p>
+                                    </a> </li>
+                                <li class="nav-item"> <a href="javascript:void(0)" class="nav-link"> <i class="nav-icon bi bi-circle"></i>
+                                        <p>Results</p>
+                                    </a> </li>
+                                <li class="nav-item"> <a href="javascript:void(0)" class="nav-link"> <i class="nav-icon bi bi-circle"></i>
+                                        <p>Winners</p>
+                                    </a> </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"> <a href="#" class="nav-link"> <i class="nav-icon bi bi-calendar-date-fill"></i>
+                                <p>
+                                    Events
+                                    <i class="nav-arrow bi bi-chevron-right"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item"> <a href="javascript:void(0)" class="nav-link"> <i class="nav-icon bi bi-circle"></i>
+                                        <p>Setup An Event</p>
+                                    </a> </li>
+                                <li class="nav-item"> <a href="javascript:void(0)" class="nav-link"> <i class="nav-icon bi bi-circle"></i>
+                                        <p>Events</p>
+                                    </a> </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"> <a href="#" class="nav-link"> <i class="nav-icon bi bi-bank2"></i>
+                                <p>
+                                    Busary
+                                    <i class="nav-arrow bi bi-chevron-right"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item"> <a href="javascript:void(0)" class="nav-link"> <i class="nav-icon bi bi-circle"></i>
+                                        <p>Make Payments</p>
+                                    </a> </li>
+                                <li class="nav-item"> <a href="../clients/busary/payment-history.html" class="nav-link"> <i class="nav-icon bi bi-circle"></i>
+                                        <p>Payment History</p>
+                                    </a> </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"> <a href="#" class="nav-link"> <i class="nav-icon bi bi-box-seam-fill"></i>
+                                <p>
+                                    Elections
+                                    <i class="nav-arrow bi bi-chevron-right"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item"> <a href="javascript:void(0)" class="nav-link"> <i class="nav-icon bi bi-circle"></i>
+                                        <p>Vote</p>
+                                    </a> </li>
+                                <li class="nav-item"> <a href="javascript:void(0)" class="nav-link"> <i class="nav-icon bi bi-circle"></i>
+                                        <p>Results</p>
+                                    </a> </li>
+                            </ul>
+                        </li>
+                        <li class="nav-header">ACCOUNT</li>
+                        <li class="nav-item"> <a href="javascript:void(0)" class="nav-link"> <i class="nav-icon bi bi-lock-fill"></i>
+                                <p>Chanage Password</p>
+                            </a> </li>
+                        <li class="nav-item"> <a href="javascript:void(0)" class="nav-link"> <i class="nav-icon bi bi-pen-fill"></i>
+                                <p>Edit Account</p>
+                            </a> </li>
+                        <li class="nav-item" id="logoutButton"> <a href="#" class="nav-link"> <i class="nav-icon bi bi-door-open-fill"></i>
+                                <p>Logout</p>
+                            </a> </li>
+                    </ul> <!--end::Sidebar Menu-->
+                </nav>
+            </div> <!--end::Sidebar Wrapper-->
+        </aside> <!--end::Sidebar--> <!--begin::App Main-->
+        <main class="app-main"> <!--begin::App Content Header-->
+            <div class="app-content-header"> <!--begin::Container-->
+                <div class="container-fluid"> <!--begin::Row-->
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <h3 class="mb-0">Dashboard</h3>
+                        </div>
+                        <div class="col-sm-6">
+                            <ol class="breadcrumb float-sm-end">
+                                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">
+                                    Dashboard
+                                </li>
+                            </ol>
+                        </div>
+                    </div> <!--end::Row-->
+                </div> <!--end::Container-->
+            </div> <!--end::App Content Header--> <!--begin::App Content-->
+            <div class="app-content"> <!--begin::Container-->
+                <div class="container-fluid"> <!-- begin::alertMsg -->
+                    <div class="error-message-container"></div> <!-- end::alertMsg --> <!--begin::Row-->
+                    <div class="row"> <!--begin::Col-->
+                        <div class="col-lg-3 col-6"> <!--begin::Small Box Widget 1-->
+                            <div class="small-box text-bg-success">
+                                <div class="inner">
+                                    <h3 class="text-white">NULL</h3>
+                                    <p class="text-white">Certificates</p>
+                                </div> <svg class="small-box-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor">
+                                    <path d="M480-120 200-272v-240L40-600l440-240 440 240v320h-80v-276l-80 44v240L480-120Zm0-332 274-148-274-148-274 148 274 148Zm0 241 200-108v-151L480-360 280-470v151l200 108Zm0-241Zm0 90Zm0 0Z"></path>
+                                </svg> <a href="#" class="small-box-footer link-light link-underline-opacity-0 link-underline-opacity-50-hover">
+                                    More info <i class="bi bi-link-45deg"></i> </a>
+                            </div> <!--end::Small Box Widget 1-->
+                        </div> <!--end::Col-->
+                        <div class="col-lg-3 col-6"> <!--begin::Small Box Widget 2-->
+                            <div class="small-box text-bg-success">
+                                <div class="inner">
+                                    <h3 class="text-white">NULL</h3>
+                                    <p class="text-white">Busary</p>
+                                </div> <svg class="small-box-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor">
+                                    <path d="M200-280v-280h80v280h-80Zm240 0v-280h80v280h-80ZM80-120v-80h800v80H80Zm600-160v-280h80v280h-80ZM80-640v-80l400-200 400 200v80H80Zm178-80h444-444Zm0 0h444L480-830 258-720Z"></path>
+                                </svg> <a href="#" class="small-box-footer link-light link-underline-opacity-0 link-underline-opacity-50-hover">
+                                    More info <i class="bi bi-link-45deg"></i> </a>
+                            </div> <!--end::Small Box Widget 2-->
+                        </div> <!--end::Col-->
+                        <div class="col-lg-3 col-6"> <!--begin::Small Box Widget 3-->
+                            <div class="small-box text-bg-success">
+                                <div class="inner">
+                                    <h3 class="text-white">NULL</h3>
+                                    <p class="text-white">My Profile</p>
+                                </div> <svg class="small-box-icon" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M6.25 6.375a4.125 4.125 0 118.25 0 4.125 4.125 0 01-8.25 0zM3.25 19.125a7.125 7.125 0 0114.25 0v.003l-.001.119a.75.75 0 01-.363.63 13.067 13.067 0 01-6.761 1.873c-2.472 0-4.786-.684-6.76-1.873a.75.75 0 01-.364-.63l-.001-.122zM19.75 7.5a.75.75 0 00-1.5 0v2.25H16a.75.75 0 000 1.5h2.25v2.25a.75.75 0 001.5 0v-2.25H22a.75.75 0 000-1.5h-2.25V7.5z"></path>
+                                </svg> <a href="#" class="small-box-footer link-light link-underline-opacity-0 link-underline-opacity-50-hover">
+                                    More info <i class="bi bi-link-45deg"></i> </a>
+                            </div> <!--end::Small Box Widget 3-->
+                        </div> <!--end::Col-->
+                        <div class="col-lg-3 col-6"> <!--begin::Small Box Widget 4-->
+                            <div class="small-box text-bg-success">
+                                <div class="inner">
+                                    <h3 class="text-white">NULL</h3>
+                                    <p class="text-white">Quiz</p>
+                                </div> <svg class="small-box-icon" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path clip-rule="evenodd" fill-rule="evenodd" d="M2.25 13.5a8.25 8.25 0 018.25-8.25.75.75 0 01.75.75v6.75H18a.75.75 0 01.75.75 8.25 8.25 0 01-16.5 0z"></path>
+                                    <path clip-rule="evenodd" fill-rule="evenodd" d="M12.75 3a.75.75 0 01.75-.75 8.25 8.25 0 018.25 8.25.75.75 0 01-.75.75h-7.5a.75.75 0 01-.75-.75V3z"></path>
+                                </svg> <a href="#" class="small-box-footer link-light link-underline-opacity-0 link-underline-opacity-50-hover">
+                                    More info <i class="bi bi-link-45deg"></i> </a>
+                            </div> <!--end::Small Box Widget 4-->
+                        </div> <!--end::Col-->
+                    </div> <!--end::Row--> <!--begin::Row-->
+                    <div class="row"> <!-- Start col -->
+                        <div class="col-lg-4 connectedSortable">
+                            <div class="card mb-4">
+                                <div class="card-header">
+                                    <h3 class="card-title">NASS President</h3>
+                                </div>
+                                <div class="card-body">
+                                    <div class="president-profile-img text-center"> <img src="../../assets/img/hod.jpg" style="border-radius: 5px;" width="100" height="100" alt="president-logo">
+                                        <h5 class="mb-2 mt-2">MR JOHNSON OLAWATOBI.A</h5>
+                                    </div>
+                                    <div class="president-message mt-3">
+                                        <h5 class="">Open Message</h5>
+                                        <p class="mt-3">Welcome to the NASS community! We're thrilled to have you on board.
+                                            Your registration opens the door to endless opportunities for growth and collaboration.
+                                            Let's work together to achieve great things. Thank you for being part of our journey!
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <h6>Connect on</h6>
+                                    <div class="d-flex align-items justify-content-between text-secondary pt-2 pe-2 ps-2">
+                                        <div class="soical-icon"> <i class="bi bi-envelope-at-fill" style="font-size: 1.3rem;"></i> </div>
+                                        <div class="soical-icon"> <i class="bi bi-skype" style="font-size: 1.3rem;"></i> </div>
+                                        <div class="soical-icon"> <i class="bi bi-facebook" style="font-size: 1.3rem;"></i> </div>
+                                        <div class="soical-icon"> <i class="bi bi-whatsapp" style="font-size: 1.3rem;"></i> </div>
+                                    </div>
+                                </div>
+                            </div> <!-- /.card -->
+                        </div> <!-- /.Start col --> <!-- Start col -->
+                        <div class="col-lg-8 connectedSortable">
+                            <div class="card text-white bg-secondary bg-gradient border-secondary mb-4">
+                                <div class="card-header border-0">
+                                    <h3 class="card-title">Member Info</h3>
+                                    <div class="card-tools"> <button type="button" class="btn btn-secondary btn-sm" data-lte-toggle="card-collapse"> <i data-lte-icon="expand" class="bi bi-plus-lg"></i> <i data-lte-icon="collapse" class="bi bi-dash-lg"></i> </button> </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="member-img-container text-center"> <img class="profileImage" style="border-radius: 50px;" width="100" height="100" alt="member-img">
+                                        <h4 class="text-white mt-2" id="name"></h4>
+                                        <div class="member-details table-responsive">
+                                            <table class="table text-start">
+                                                <tbody>
+                                                    <tr>
+                                                        <th class="text-white">Email</th>
+                                                        <th class="text-white" id="email"></th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="text-white">Membership</th>
+                                                        <th class="text-white" id="accountType"></th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="text-white">Member ID</th>
+                                                        <th class="text-white" id="memberId"></th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="text-white">Martic Number</th>
+                                                        <th class="text-white" id="matricNo"></th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="text-white">Program</th>
+                                                        <th class="text-white" id="program"></th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="text-white">Department</th>
+                                                        <th class="text-white" id="department"></th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="text-white">Level</th>
+                                                        <th class="text-white" id="level"></th>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer border-0"></div>
+                            </div>
+                        </div> <!-- /.Start col -->
+                    </div> <!-- /.row (main row) -->
+                </div> <!--end::Container-->
+            </div> <!--end::App Content-->
+        </main> <!--end::App Main--> <!--begin::Footer-->
+        <footer class="app-footer" data-astro-cid-3wvivkes> <!--begin::To the end-->
+            <div class="float-end d-none d-sm-inline" data-astro-cid-3wvivkes>
+                Powered By
+                <img src="../../assets/img/fav.png" width="40" alt="" data-astro-cid-3wvivkes>
+            </div> <!--end::To the end--> <!--begin::Copyright--> <strong data-astro-cid-3wvivkes>
+                Copyright &copy; 2022-2024&nbsp;
+                <a href="https://adminlte.io" class="text-decoration-none" data-astro-cid-3wvivkes>NIGERIAN ASSOCIATION OF SCIENCE STUDENTS (NASS)</a>.
+            </strong>
+            All rights reserved.
+            <!--end::Copyright--> <!--begin::To the end-->
+            <div class="text-center" style="margin-top: 5px !important;" data-astro-cid-3wvivkes> <small data-astro-cid-3wvivkes>Designed and Implemented by <a href="https://www.github.com/vickkykruz" target="_blank" rel="noopener noreferrer" data-astro-cid-3wvivkes>VickkyKruz Programmer</a></small> </div> <!--end::To the end-->
+        </footer> <!--end::Footer-->
+    </div> <!--end::App Wrapper--> <!--begin::Script--> <!--begin::Third Party Plugin(OverlayScrollbars)-->
+    <script src="https://cdn.jsdelivr.net/npm/overlayscrollbars@2.1.0/browser/overlayscrollbars.browser.es6.min.js" integrity="sha256-NRZchBuHZWSXldqrtAOeCZpucH/1n1ToJ3C8mSK95NU=" crossorigin="anonymous"></script> <!--end::Third Party Plugin(OverlayScrollbars)--><!--begin::Required Plugin(popperjs for Bootstrap 5)-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script> <!--end::Required Plugin(popperjs for Bootstrap 5)--><!--begin::Required Plugin(Bootstrap 5)-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script> <!--end::Required Plugin(Bootstrap 5)--><!--begin::Required Plugin(AdminLTE)-->
+    <script src="../../js/adminlte.js"></script> <!--end::Required Plugin(AdminLTE)--><!--begin::OverlayScrollbars Configure-->
+    <script>
+        const SELECTOR_SIDEBAR_WRAPPER = ".sidebar-wrapper";
+        const Default = {
+            scrollbarTheme: "os-theme-light",
+            scrollbarAutoHide: "leave",
+            scrollbarClickScroll: true,
+        };
+        document.addEventListener("DOMContentLoaded", function() {
+            const sidebarWrapper = document.querySelector(SELECTOR_SIDEBAR_WRAPPER);
+            if (
+                sidebarWrapper &&
+                typeof OverlayScrollbarsGlobal?.OverlayScrollbars !== "undefined"
+            ) {
+                OverlayScrollbarsGlobal.OverlayScrollbars(sidebarWrapper, {
+                    scrollbars: {
+                        theme: Default.scrollbarTheme,
+                        autoHide: Default.scrollbarAutoHide,
+                        clickScroll: Default.scrollbarClickScroll,
+                    },
+                });
+            }
+        });
+    </script> <!--end::OverlayScrollbars Configure--> <!-- OPTIONAL SCRIPTS --> <!-- sortablejs -->
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js" integrity="sha256-ipiJrswvAR4VAx/th+6zWsdeYmVae0iJuiR+6OqHJHQ=" crossorigin="anonymous"></script> <!-- sortablejs -->
+    <script>
+        const connectedSortables =
+            document.querySelectorAll(".connectedSortable");
+        connectedSortables.forEach((connectedSortable) => {
+            let sortable = new Sortable(connectedSortable, {
+                group: "shared",
+                handle: ".card-header",
+            });
+        });
+
+        const cardHeaders = document.querySelectorAll(
+            ".connectedSortable .card-header",
+        );
+        cardHeaders.forEach((cardHeader) => {
+            cardHeader.style.cursor = "move";
+        });
+    </script> <!-- apexcharts -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts@3.37.1/dist/apexcharts.min.js" integrity="sha256-+vh8GkaU7C9/wbSLIcwq82tQ2wTf44aOHA8HlBMwRI8=" crossorigin="anonymous"></script> <!-- jsvectormap -->
+    <script src="https://cdn.jsdelivr.net/npm/jsvectormap@1.5.3/dist/js/jsvectormap.min.js" integrity="sha256-/t1nN2956BT869E6H4V1dnt0X5pAQHPytli+1nTZm2Y=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jsvectormap@1.5.3/dist/maps/world.js" integrity="sha256-XPpPaZlU8S/HWf7FZLAncLg2SAkP8ScUTII89x9D3lY=" crossorigin="anonymous"></script> <!-- jsvectormap -->
+    <script type="module" src="../../js/firebase/pages/dashboard-index.js"></script> <!--end::Script--> <!-- begin::intializeAnalayics -->
+    <intializeAnalytics client:only="client"></intializeAnalytics> <!-- end::intializeAnalayics -->
+</body><!--end::Body-->
+
+</html>
